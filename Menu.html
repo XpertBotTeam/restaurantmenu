@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: rgb(199, 175, 38);
+        color: white;
+        font-size: 20px;
+        }
+        
+
+    </style>
+    <script>
+      function Verif(){
+        with(window.document.menu){
+         if((FOOD.value.length==0)||(LN.value.length==0)||
+         (DoB.value.length==0)||(photo.value.length==0)){
+         window.alert("You have to fill all the required fiels");
+         return false;
+         }
+         else{
+           return window.confirm("Do you want really to submit the form?");
+         }
+         
+       }
+     }
+     </script>
+
+   
+    <title>Menu</title>
+</head>
+<body >
+  <form name="menu" action="menu.php">
+    <p style="font-size: 50PX;color:white;">CHOOSE YOUR FOOD!</p>
+STARTERS:
+    <input type="checkbox" name="FOOD]" value="french fries" /> french fries
+    <input type="checkbox" name="FOOD[]" value="mozz sticks" /> Mozzerlla sticks
+    <input type="checkbox" name="FOOD[]" value="bbq wings" /> B.B.Q Wings
+    <input type="checkbox" name="FOOD[]" value="cheese on fries" /> cheese on fries
+</br></br>
+<hr>
+Main Dish:
+    <input type="checkbox" name="FOOD]" value="POULET AL KIEV" /> Poulet al kiev
+    <input type="checkbox" name="FOOD[]" value=POLLO AL FREDO" /> Pollo al fredo
+    <input type="checkbox" name="FOOD[]" value="MARIA LUNA" /> Maria luna
+    <input type="checkbox" name="FOOD[]" value="BROASTED" /> Broasted chicken
+    <input type="checkbox" name="FOOD[]" value=" NAPOLI CHICKEN" /> Napoli chicken
+</br></br>
+<hr>
+SANDWICH:
+    <input type="checkbox" name="FOOD]" value="Chicken sub" /> Chicken sub
+    <input type="checkbox" name="FOOD[]" value="Steak sub" /> Steak sub
+    <input type="checkbox" name="FOOD[]" value=" Arizona" /> Arizona
+    <input type="checkbox" name="FOOD[]" value="Turkey & chesse" /> Turkey & chesse
+    <input type="checkbox" name="FOOD[]" value="Escalope" /> Escalope
+</br></br>
+<hr>
+BURGER:
+    <input type="checkbox" name="FOOD]" value="Chicken Mozzerlla" /> Chicken Mozzerlla
+    <input type="checkbox" name="FOOD[]" value="Zinger" /> Zinger
+    <input type="checkbox" name="FOOD[]" value=" Easy chilli" /> Easy chilli
+    <input type="checkbox" name="FOOD[]" value="Beef Mozzerlla" /> Beef Mozzerlla
+    <input type="checkbox" name="FOOD[]" value="American burger" /> American burger
+</br></br>
+<hr>
+Beverage:
+    <input type="checkbox" name="FOOD]" value="Pepsi" /> Pepsi
+    <input type="checkbox" name="FOOD[]" value="7up" /> 7up
+    <input type="checkbox" name="FOOD[]" value=" Mirinada" /> Mirinada
+    <input type="checkbox" name="FOOD[]" value="Laban" /> Laban 
+    <input type="checkbox" name="FOOD[]" value="water" /> Water Bottle
+</br></br>
+<hr>
+<textarea placeholder="NOTE..."style="width: 1000px;height: 100px;" ></textarea>
+<button><a href="submit.html" style="font-size: 40px;" style=" box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);size: 500pt;">SUBMIT</a></button>
+
+
+
+
+</form>
+</body>
+</html>
